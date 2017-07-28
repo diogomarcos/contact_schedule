@@ -4,7 +4,7 @@ class CreatePhones < ActiveRecord::Migration
       t.string :phone
       t.references :contact, index: true, foreign_key: true
 
-      t.timestamps null: false
+      t.timestamps null: false # created_at, updated_at
     end
   end
 end

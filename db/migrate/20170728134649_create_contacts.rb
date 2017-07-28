@@ -6,7 +6,7 @@ class CreateContacts < ActiveRecord::Migration
       t.references :kind, index: true, foreign_key: true
       t.text :remark
 
-      t.timestamps null: false
+      t.timestamps null: false # created_at, updated_at
     end
   end
 end
