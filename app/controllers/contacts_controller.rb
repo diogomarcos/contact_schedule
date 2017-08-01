@@ -15,12 +15,12 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
-    @kind_options_for_select = Kind.all
+    options_for_select
   end
 
   # GET /contacts/1/edit
   def edit
-    @kind_options_for_select = Kind.all
+    options_for_select
   end
 
   # POST /contacts
@@ -64,6 +64,11 @@ class ContactsController < ApplicationController
   end
 
   private
+    # Para exibir a caixa de seleção com os tipos
+    def options_for_select
+      @kind_options_for_select = Kind.all
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
       @contact = Contact.find(params[:id])
