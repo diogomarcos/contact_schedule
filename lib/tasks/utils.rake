@@ -23,7 +23,7 @@ namespace :utils do
 		end
 	puts "Gerando os Endereços (Addresses)... [OK]"
 
-	puts "Gerando os Telefone (Phones)..."
+	puts "Gerando os Telefones (Phones)..."
 		Contact.all.each do |_contact|
 			Random.rand(1..5).times do |i|
 				Phone.create!(
@@ -32,7 +32,7 @@ namespace :utils do
 				)
 			end
 		end
-	puts "Gerando os Telefone (Phones)... [OK]"
+	puts "Gerando os Telefones (Phones)... [OK]"
 
   end
 
