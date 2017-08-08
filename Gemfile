@@ -16,8 +16,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # A library for generating fake data such as names, addresses, and phone numbers
 gem 'faker'
-#Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff http://rails-i18n.org
+# Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff http://rails-i18n.org
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+# O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+gem 'lerolero_generator'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

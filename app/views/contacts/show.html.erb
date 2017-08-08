@@ -1,26 +1,28 @@
 <div class="basic-grey">
 <p id="notice"><%= notice %></p>
 
+<h1><%= "#{t('messages.show')} #{@contact.model_name.human(count: 1)}" %></h1>
+
 <p>
-  <strong>Name:</strong>
+  <strong><%= @contact.class.human_attribute_name("name") %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= @contact.class.human_attribute_name("email") %>:</strong>
   <%= @contact.email %>
 </p>
 
 <p>
-  <strong>Kind:</strong>
-  <%= @contact.kind %>
+  <strong><%= @contact.class.human_attribute_name("kind") %>:</strong>
+  <%= @contact.kind.description %>
 </p>
 
 <p>
-  <strong>Remark:</strong>
+  <strong><%= @contact.class.human_attribute_name("remark") %>:</strong>
   <%= @contact.remark %>
 </p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to t('buttons.edit'), edit_contact_path(@contact) %> |
+<%= link_to t('buttons.back'), contacts_path %>
 </div>

@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <h1><%= @title %></h1>
+  <h1><%= "#{@title} #{@contact.model_name.human(count: 1)}" %></h1>
 
   <div class="field">
     <%= f.label :name %><br>
@@ -47,7 +47,7 @@
     <%= f.text_area :remark %>
   </div>
   <div class="actions">
-    <%= f.submit "Enviar", class: "button" %>
-    <%= link_to 'Back', contacts_path, class: "button" %>
+    <%= f.submit t('buttons.submit'), class: "button" %>
+    <%= link_to t('buttons.back'), contacts_path, class: "button" %>
   </div>
 <% end %>

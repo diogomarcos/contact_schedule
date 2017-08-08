@@ -1,26 +1,28 @@
 <div class="basic-grey">
 <p id="notice"><%= notice %></p>
 
+<h1><%= "#{t('messages.show')} #{@address.model_name.human(count: 1)}" %></h1>
+
 <p>
-  <strong>Street:</strong>
+  <strong><%= @address.class.human_attribute_name("street") %>:</strong>
   <%= @address.street %>
 </p>
 
 <p>
-  <strong>City:</strong>
+  <strong><%= @address.class.human_attribute_name("city") %>:</strong>
   <%= @address.city %>
 </p>
 
 <p>
-  <strong>State:</strong>
+  <strong><%= @address.class.human_attribute_name("state") %>:</strong>
   <%= @address.state %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
-  <%= @address.contact %>
+  <strong><%= @address.class.human_attribute_name("contact") %>:</strong>
+  <%= @address.contact.name %>
 </p>
 
-<%= link_to 'Edit', edit_address_path(@address) %> |
-<%= link_to 'Back', addresses_path %>
+<%= link_to t('buttons.edit'), edit_address_path(@address) %> |
+<%= link_to t('buttons.back'), addresses_path %>
 </div>
