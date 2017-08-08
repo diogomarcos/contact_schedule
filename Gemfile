@@ -22,6 +22,10 @@ gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 gem 'lerolero_generator'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem 'cocoon'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+# Translations for the kaminari gem
+gem 'kaminari-i18n', '~> 0.3.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

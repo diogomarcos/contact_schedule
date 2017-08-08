@@ -14,7 +14,7 @@
 
   <tbody>
     <% @phones.each do |phone| %>
-      <tr>
+      <tr style="background: <%= cycle('#FFFFFF', '#F5F5F5') %>">
         <td><%= phone.phone %></td>
         <td><%= phone.contact.name %></td>
         <td><%= link_to t('buttons.show'), phone %></td>
@@ -24,6 +24,10 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<%= paginate @phones %>
 
 <br>
 

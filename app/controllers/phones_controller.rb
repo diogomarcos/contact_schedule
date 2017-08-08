@@ -4,7 +4,7 @@ class PhonesController < ApplicationController
   # GET /phones
   # GET /phones.json
   def index
-    @phones = Phone.all
+    @phones = Phone.all.page(params[:page]).per(15)
   end
 
   # GET /phones/1

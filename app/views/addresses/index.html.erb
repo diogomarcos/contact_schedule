@@ -16,7 +16,7 @@
 
   <tbody>
     <% @addresses.each do |address| %>
-      <tr>
+      <tr style="background: <%= cycle('#FFFFFF', '#F5F5F5') %>">
         <td><%= address.street %></td>
         <td><%= address.city %></td>
         <td><%= address.state %></td>
@@ -28,6 +28,10 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<%= paginate @addresses %>
 
 <br>
 

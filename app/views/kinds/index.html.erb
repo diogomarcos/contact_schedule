@@ -13,7 +13,7 @@
 
   <tbody>
     <% @kinds.each do |kind| %>
-      <tr>
+      <tr style="background: <%= cycle('#FFFFFF', '#F5F5F5') %>">
         <td><%= kind.description %></td>
         <td><%= link_to t('buttons.show'), kind %></td>
         <td><%= link_to t('buttons.edit'), edit_kind_path(kind) %></td>
@@ -22,6 +22,10 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<%= paginate @kinds %>
 
 <br>
 
