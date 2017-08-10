@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'bundler', '>= 1.8.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -26,6 +27,9 @@ gem 'cocoon'
 gem 'kaminari'
 # Translations for the kaminari gem
 gem 'kaminari-i18n', '~> 0.3.2'
+
+# Notify.js - A simple, versatile notification library
+gem 'rails-assets-notifyjs', source: 'http://insecure.rails-assets.org/'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
