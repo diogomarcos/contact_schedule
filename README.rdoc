@@ -1,28 +1,38 @@
-== README
+== Agenda de Contatos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=== Breve Introdução
 
-Things you may want to cover:
+Esse projeto tem como finalidade didática para colocar em prática os conceitos referentes ao framework Ruby On Rails. No projeto foi desenvolvido um sistema simples de agenda de contatos, na qual tem o cadastro de tipos (como Amigo, Contato, Comercial, e etc), além dos contatos propriamento dito.
 
-* Ruby version
+Na pasta <tt>project</tt> são encontrados a modelagem de dados da aplicação e o wireframe.
 
-* System dependencies
+=== Tecnologias usadas
 
-* Configuration
+Para o desenvolvimento da aplicação foram utilizadas os seguintes recursos:
 
-* Database creation
+* Ruby (2.3.1)
+* Rails (4.2.5)
+* Bootstrap (3.3.7)
+* Sqlite3
 
-* Database initialization
+=== Ambiente de Desenvolvimento
 
-* How to run the test suite
+* Sublime Text 3
 
-* Services (job queues, cache servers, search engines, etc.)
+=== Requisitos da Aplicação
 
-* Deployment instructions
+* Git
+* Ruby
+* Rails
 
-* ...
+=== Execução da Aplicação
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Através do 'prompt command' ou 'git bash', realize o clone do projeto pelo comando
+  <tt>git clone git@github.com:diogomarcos/contact_schedule.git contact_schedule</tt>
+* Através do 'prompt command' ou 'git bash' navegue até o diretório do projeto <tt>contact_schedule</tt>
+* Através do 'prompt command' ou 'git bash' execute o seguinte comando <tt>bundle install</tt>
+* Através do 'prompt command' ou 'git bash' execute o seguinte comando <tt>rake db:migrate</tt>
+* Através do 'prompt command' ou 'git bash' execute o seguinte comando <tt>rake db:seed</tt>
+* Através do 'prompt command' ou 'git bash' execute o seguinte comando <tt>rake utils:seed</tt>
+* Através do 'prompt command' ou 'git bash' execute o seguinte comando <tt>rails s</tt> para 'subir a aplicação'
+* Em seu navegador de preferência acesso o endereço <tt>http://localhost:3000</tt> para ter acesso a aplicação
