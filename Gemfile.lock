@@ -98,6 +98,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.8.0-x64-mingw32)
       mini_portile2 (~> 2.2.0)
+    pg (0.21.0-x64-mingw32)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -133,6 +134,11 @@ GEM
     rails-i18n (4.0.9)
       i18n (~> 0.7)
       railties (~> 4.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.5)
       actionpack (= 4.2.5)
       activesupport (= 4.2.5)
@@ -198,11 +204,13 @@ DEPENDENCIES
   kaminari
   kaminari-i18n (~> 0.3.2)
   lerolero_generator
+  pg
   pry-rails
   rails (= 4.2.5)
   rails-assets-bootstrap (= 3.3.7)!
   rails-assets-notifyjs!
   rails-i18n (~> 4.0.0)
+  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3
@@ -210,6 +218,9 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+RUBY VERSION
+   ruby 2.3.1p112
 
 BUNDLED WITH
    1.13.3
