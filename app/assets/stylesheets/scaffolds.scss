@@ -2,12 +2,10 @@
 .basic-grey {
     margin-left:auto;
     margin-right:auto;
-    max-width: 610px;
+    max-width: 750px;
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
-    font: 12px Georgia, "Times New Roman", Times, serif;
     color: #888;
-    text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
 }
 .basic-grey h1 {
@@ -104,4 +102,8 @@ nav{
     /* margin: 0; */
     padding: 5px;
     text-align: center;
+}
+
+.pagination {
+    display: block;
 }

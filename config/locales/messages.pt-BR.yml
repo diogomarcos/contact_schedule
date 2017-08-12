@@ -6,3 +6,6 @@
     confirm: Tem certeza?
     listing: Listando
     errors: proibiram que este contato seja salvo
+    created: O item foi criado com sucesso!
+    updated: O item foi atualizado com sucesso!
+    destroyed: O item foi excluído com sucesso!

@@ -30,6 +30,8 @@ gem 'kaminari-i18n', '~> 0.3.2'
 
 # Notify.js - A simple, versatile notification library
 gem 'rails-assets-notifyjs', source: 'http://insecure.rails-assets.org/'
+# The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+gem 'rails-assets-bootstrap', '3.3.7', source: 'http://insecure.rails-assets.org/'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
